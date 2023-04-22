@@ -15,6 +15,10 @@ The objective was to create a Convolutional Neural Network that is able to class
 1. Unzip data.zip into home directory.
 2. Create a 'models' folder for models to be stored into at each iteration.
 
+To create a model, run `python train.py`
+
+To test the model, run `python test.py`
+
 ## Content
 
 - /report, contains Latex files used to write the report.
