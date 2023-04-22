@@ -1,0 +1,15 @@
+\documentclass[../main.tex]{subfiles}
+\graphicspath{{\subfix{../images/}}}
+\begin{document}
+
+\subsection{Pre-Processing}
+
+\subsubsection{Data Selection}
+
+From exploring the dataset of images, several images were discarded as they did not represent the category of fruit it was meant to. Images that did not contain the fruit or contained a non physical version of the fruit (such as a cartoon) were removed. Images that were considered for removal were images that contain the fruit in low resolution, messy images with many objects or images with many edits where the fruit cannot be recognised.
+
+\subsubsection{Data Transform}
+
+Images were transformed into tensors in order to be in a usable state for the computational model. To normalise pixels values, each pixel were converted from a integer between 0 - 255 to a floating point number within a distribution with the mean and the standard deviation is 0.5 (Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5)) in PyTorch). The images are also resized to 300 pixels in width and height to ensure that all images can be processed equally.
+
+\end{document}

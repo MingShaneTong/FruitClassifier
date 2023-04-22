@@ -1,0 +1,24 @@
+\documentclass[../main.tex]{subfiles}
+\graphicspath{{\subfix{../images/}}}
+\begin{document}
+
+\section{Future Work}
+
+
+\subsection{Network Architecture}
+
+Part of what made this network successful was that it was built similar to the architecture of AlexNet, an existing working model. However, this model was developed in 2012 and many other models have been developed since then. 
+
+Another model used in this paper was the ResNet18 which was used in transfer learning to classify the fruits. In the ResNet18 model, the concept of the residual learning was developed which means that the original inputs are given to other hidden layers and not just the input layer.  \cite{DBLP:journals/corr/HeZRS15} This technique was not used in this model so utilising this technique could create some success. 
+
+ResNet is not the only model that can be studied but GoogleNet and VGG are also CNN models that could be studied furthur. 
+
+\subsection{Batch Size and Learning Rate}
+
+Part of the investigation into batch size was following the linearity rule which states when there is an increase in batch size then a proportional increase in learning rate. However, the batch size to learning rate ratio was constant through out the test. It was concluded that lower batch sizes are more suitable which aligned with the study referenced. However, no optimal ratio was found that maximised testing accuracy. Investigation into the optimal ratio would be valuable in optimising the neural network and its performance. Additional research into whether the same ratio can be used in another model would also be beneficial. 
+
+\subsection{Overlapping Pools}
+
+The use of pools were used as an attempt to reduce the time to train the model by reducing the number of pixels for the next layer. In this model, the overlapping pools were used to reduce overfitting by adding extra pixels to the reduced image, which contradicts its original purpose. Research into the overlapping pools' effectiveness and computational cost would inform developers of this technique's effectiveness in CNN models and whether they should be used in certain contexts. 
+
+\end{document}

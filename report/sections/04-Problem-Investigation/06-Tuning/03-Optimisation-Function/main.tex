@@ -1,0 +1,16 @@
+\documentclass[../main.tex]{subfiles}
+\graphicspath{{\subfix{../images/}}}
+\begin{document}
+
+\subsection{Optimisation Function}
+
+The previous optimisation function used in the model used the stochastic gradient descent (SGD). What this means is that the gradient descent performed is the sum of the proposed changes for every instance in the batch. 
+
+However, the steps taken by this method can be large as it is the sum of its changes. Another weakness is that the learning rate is fixed and so it reaches the optima in more epochs than other algorithms. Other optimisation functions can be tested to see if there is any improvement. 
+
+\subsubsection{Adam}
+Adam is an optimisation algorithm that can optimize the model faster than SGD by increasing momentum towards the optima. This usually results in fewer steps being needed for our model to converge to the optima. 
+
+During testing of this function, Adam not only didn't improve the performance of the model, it failed to change the accuracy of both sets of data within 20 epochs. This means that for this model, Adam is not suitable. 
+
+\end{document}

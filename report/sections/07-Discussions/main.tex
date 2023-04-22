@@ -1,0 +1,15 @@
+\documentclass[../main.tex]{subfiles}
+\graphicspath{{\subfix{../images/}}}
+\begin{document}
+
+\section{Discussions}
+
+The difference in accuracy is due to the type of model that are being used. The MLP model considers the image as an array which is not a representative way of analysing the image. However, using convolutional layers, the kernel is able to select parts of the image that helps identify the fruit such as shapes and other features. It is because of the addition of kernels in the CNN that helps it achieve a higher accuracy on the unknown test set.
+
+This came at the cost of time as the CNN model took significantly longer to train. The addition of the convolution layers could add extra computation time as it is more expensive of an operation to apply a kernel to the image as compared to multiplying and adding 2 arrays which is the most common operation in a MLP network. 
+
+The addition of the dropping layer also increases the amount of time it takes for the model to converge. The dropping layer stops certain nodes from being trained in each batch which means that each node will take longer to train. It was predicted that the dropout layer required twice the number of iterations for the model to converge compared to when a dropout layer was not used. \cite{alexnet}
+
+A technique that was used to reduce the training time of the model was to use the pooling layers that reduced the dimensions of the image by grouping adjecent pixels together. However, the ones used in this model were overlapping which added extra pixels to the image. With non overlapping pools, the model would train faster as there are fewer pixels in the outputted image. 
+
+\end{document}

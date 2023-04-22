@@ -1,0 +1,15 @@
+\documentclass[../main.tex]{subfiles}
+\graphicspath{{\subfix{../images/}}}
+\begin{document}
+
+\section{Conclusion}
+
+In this paper, a Convolutional Neural Network was trained to identify whether an image contained a cherry, strawberry or tomato. The model trained utilised many techniques used within the AlexNet model for the ImageNet database. The final model achieved an accuracy of 80.78\% on the test set compared to the MLP model which achieved an accuracy of 37.89\%.
+
+Common techniques used for Convolutional Neural Networks were tested. 
+
+Pooling can be overlapping or non-overlapping. It was discovered that overlapping pools has the potential to reduce overfitting within the model. Dropout layers also help reduce overfitting by getting the model to learn from multiple features rather than focus on one as nodes are randomly removed from the network during training. 
+
+It was also reported that the lower batch sizes tends to perform better than larger batch sizes due to the need to increase the learning rate. It was also found that random augmenting was beneficial to helping the model learn the patterns of the fruit and cropping the center image  helped the model by removing noise around the border of the image. 
+
+\end{document}

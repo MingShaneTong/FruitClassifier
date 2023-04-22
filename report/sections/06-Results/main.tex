@@ -1,0 +1,18 @@
+\documentclass[../main.tex]{subfiles}
+\graphicspath{{\subfix{../images/}}}
+\begin{document}
+
+\section{Results}
+
+\begin{figure}[h!]
+  \centering
+  \begin{subfigure}[b]{0.7\linewidth}
+    \includegraphics[width=\linewidth]{ResultsNew.png}
+    \caption{Results of CNN Model}
+  \end{subfigure}
+  \label{fig:model-results}
+\end{figure}
+
+The model achieved an accuracy of 80.78\% on the test set of 900 images. This is an improvement on the baseline MLP model which achieved an accuracy of 37.89\%. The training of the final model took 71 minutes whereas the MLP model took 3 minutes to converge.  
+
+\end{document}

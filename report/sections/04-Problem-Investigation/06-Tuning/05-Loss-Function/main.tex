@@ -1,0 +1,13 @@
+\documentclass[../main.tex]{subfiles}
+\graphicspath{{\subfix{../images/}}}
+\begin{document}
+
+\subsection{Loss Functions}
+
+The loss function is used to inform the model on how to do gradient descent. While there are many types of loss functions available, the outputs of this model are categorized and so loss functions like Mean Squared Error (MSE) cannot be used as it outputs either numerical or ranked data. 
+
+In the first model, the CrossEntropyLoss was used as the loss function to optimise the model. Another loss function that is appropriate for categorical data is the NLLLoss. This method was tested against the training data and the validation data.  
+
+After testing, the use of NLLLoss achieved an accuracy of 60\%, improving the accuracy of the validation set by 10\% increasing from 50\% using CrossEntropyLoss. 
+
+\end{document}
